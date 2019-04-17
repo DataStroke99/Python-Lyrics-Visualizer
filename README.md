@@ -1,4 +1,4 @@
-# RapRhymeDetector
+# Python-Lyrics-Visualizer
 A Python program which detects rhymes
 
 
