@@ -3,10 +3,8 @@ A Python program which detects rhymes
 
 
 # Getting Data
-I get the lyrics and all of the data from API offered by genius.com, which is a great website which has music data and lyrics easily avaliable. so i applied for the api and started accessing it. 
-I found that another creator has made a python binding of the api so its convinent to use his version but i decided that i wanted to have a custom one as i would be experimenting with it a lot. if you want to see the binding check lyrical genius.
+I get the lyrics and  data from the API offered by genius.com- is the world's biggest collection of song lyrics and musical knowledge. There is already a python binding for the genius API called the lyrics genius which helps you to achieve this but i wanted more control and understanding of the process so i decided to directly use the original API.
 
-Using Genius. API
 
 Once you register for the api the user will get 3 client keys, 
 
@@ -19,11 +17,12 @@ Once you register for the api the user will get 3 client keys,
     path     = 'search/'
     search   = '/search?q='
     header   = {'Authorization':'Bearer '+ client_token}
-  Helpful projects like - https://github.com/dlarsen5/PyRap/blob/master/Retrieve_Lyrics.py
-  and few . more helped me to form the basis of my project.
+ 
+Helpful projects like - https://github.com/dlarsen5/PyRap/blob/master/Retrieve_Lyrics.py 
+were useful as i used some functions from there but modified them to fit my project. 
   
  # Fetching Data
- There are 2 main functions whihc deal with the genius.com api and its resulting JSON data. properly nagviating it to get the appropriate information. in this section 
+There are 2 main functions whihc deal with the genius.com api and its resulting JSON data. properly nagviating it to get the appropriate information. in this section 
  
      def lyrics_fetch(song_api):
         try:
